@@ -37,6 +37,8 @@ const createSendToken = (
 
     user.password = undefined;
 
+    res.cookie("auth_token", token, cookiesOptions);
+
     return res.status(statusCode).json({
         success: true,
         message: "user authenticated successfully",

@@ -2,11 +2,13 @@ const envVariable = [
     "PORT",
     "JWT_SECRET",
     "JWT_EXPIRES_IN",
+    "JWT_COOKIE_EXPIRES_IN",
     "DB_NAME",
     "DB_USER",
     "DB_PASSWORD",
     "DB_HOST",
     "DB_PORT",
+    "REDIS_URL",
 ];
 
 export function checkEnvVariables() {
